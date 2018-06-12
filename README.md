@@ -17,7 +17,10 @@ Navigate to the folder you want to contain MOPs, and from BASH / Git BASH type:
 Edit your houdini.env file and create a variable called MOPS that points to the new folder:
 `MOPS = "/path/to/MOPS"`
 
-Finally, add `$MOPS/otls` to your HOUDINI_OTLSCAN_PATH:
+Then, add `$MOPS` to your HOUDINI_PATH:
+`HOUDINI_PATH = $MOPS;&`
+
+Alternatively, you can setup your toolbar and otls directories separately. Add `$MOPS/otls` to your HOUDINI_OTLSCAN_PATH:
 `HOUDINI_OTLSCAN_PATH = $MOPS/otls;@/otls`
 And add `$MOPS/toolbar` to your HOUDINI_TOOLBAR_PATH:
 `HOUDINI_TOOLBAR_PATH = $MOPS/toolbar;@/toolbar`
